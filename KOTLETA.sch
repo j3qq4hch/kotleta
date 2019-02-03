@@ -3646,11 +3646,11 @@ package type TQ</description>
 <packages>
 </packages>
 <symbols>
-<symbol name="9V" urn="urn:adsk.eagle:symbol:5017770/1" library_version="1">
+<symbol name="10V5" urn="urn:adsk.eagle:symbol:8642451/1" library_version="2">
 <wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
 <wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
 <text x="0" y="3.556" size="1.27" layer="96" font="vector" ratio="15" align="center">&gt;VALUE</text>
-<pin name="VDD_9V" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
+<pin name="VDD_10V5" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
 </symbol>
 <symbol name="VBAT" urn="urn:adsk.eagle:symbol:5017780/1" library_version="1">
 <wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
@@ -3660,9 +3660,9 @@ package type TQ</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="9V" urn="urn:adsk.eagle:component:5017800/1" prefix="+P" library_version="1">
+<deviceset name="10V5" urn="urn:adsk.eagle:component:8642452/1" prefix="+P" library_version="2">
 <gates>
-<gate name="G$1" symbol="9V" x="0" y="0"/>
+<gate name="G$1" symbol="10V5" x="0" y="2.54"/>
 </gates>
 <devices>
 <device name="">
@@ -5681,7 +5681,6 @@ http://www.txccrystal.com/images/pdf/7m-accuracy.pdf</description>
 <part name="FD4" library="sapog_reference_hardware" deviceset="FIDUCIALMOUNT" device="">
 <variant name="basic" populate="no"/>
 </part>
-<part name="R1" library="R_digikey" library_urn="urn:adsk.eagle:library:2539499" deviceset="200R" device="-0402" package3d_urn="urn:adsk.eagle:package:2539512/2" technology="-5%" value="200R"/>
 <part name="R26" library="R_digikey" library_urn="urn:adsk.eagle:library:2539499" deviceset="200R" device="-0402" package3d_urn="urn:adsk.eagle:package:2539512/2" technology="-5%" value="200R">
 <attribute name="PARTNO" value="RC0402FR-07240RL"/>
 <variant name="basic" populate="no"/>
@@ -5737,7 +5736,7 @@ http://www.txccrystal.com/images/pdf/7m-accuracy.pdf</description>
 </part>
 <part name="GND14" library="sapog_reference_hardware" deviceset="GND" device=""/>
 <part name="C12" library="C_digikey" library_urn="urn:adsk.eagle:library:2539367" deviceset="0.1µF" device="-0402" package3d_urn="urn:adsk.eagle:package:2539379/2" technology="-16V_10%_X7R" value="0.1µF"/>
-<part name="+P1" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="9V" device=""/>
+<part name="+P1" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="10V5" device=""/>
 <part name="+P2" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="VBAT" device=""/>
 <part name="+P3" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="VBAT" device=""/>
 <part name="+P4" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="VBAT" device=""/>
@@ -5755,7 +5754,7 @@ http://www.txccrystal.com/images/pdf/7m-accuracy.pdf</description>
 <part name="+P11" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="VBAT" device=""/>
 <part name="C38" library="C_digikey" library_urn="urn:adsk.eagle:library:2539367" deviceset="22µF" device="-1206" package3d_urn="urn:adsk.eagle:package:2539382/2" technology="-35V_20%_X5R" value="22µF"/>
 <part name="GND33" library="sapog_reference_hardware" deviceset="GND" device=""/>
-<part name="+P12" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="9V" device=""/>
+<part name="+P12" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="10V5" device=""/>
 <part name="R14" library="SHUNT_RESISTORS" library_urn="urn:adsk.eagle:library:2644450" deviceset="CURRENT_SHUNT_KELVIN" device="-2010-KELVIN" package3d_urn="urn:adsk.eagle:package:8637302/2" technology="-0.001R" value="0.001R"/>
 <part name="PAD1" library="PADS" library_urn="urn:adsk.eagle:library:3188696" deviceset="PAD" device="-HOLE-0.6" package3d_urn="urn:adsk.eagle:package:6513718/2" value="PAD-HOLE-0.6">
 <variant name="basic" populate="no"/>
@@ -5816,7 +5815,6 @@ http://www.txccrystal.com/images/pdf/7m-accuracy.pdf</description>
 <part name="PAD19" library="PADS" library_urn="urn:adsk.eagle:library:3188696" deviceset="PAD" device="-HOLE-0.6" package3d_urn="urn:adsk.eagle:package:6513718/2" value="PAD-HOLE-0.6">
 <variant name="basic" populate="no"/>
 </part>
-<part name="R29" library="R_digikey" library_urn="urn:adsk.eagle:library:2539499" deviceset="200R" device="-0402" package3d_urn="urn:adsk.eagle:package:2539512/2" technology="-5%" value="200R"/>
 <part name="P+12" library="sapog_reference_hardware" deviceset="3.3V" device=""/>
 <part name="R30" library="R_digikey" library_urn="urn:adsk.eagle:library:2539499" deviceset="10K" device="-0402" package3d_urn="urn:adsk.eagle:package:2539512/2" technology="-0.1%" value="10K"/>
 </parts>
@@ -5828,8 +5826,6 @@ http://www.txccrystal.com/images/pdf/7m-accuracy.pdf</description>
 <wire x1="182.88" y1="116.84" x2="182.88" y2="63.5" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="182.88" y1="63.5" x2="254" y2="63.5" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="254" y1="63.5" x2="254" y2="116.84" width="0.1524" layer="97" style="shortdash"/>
-<text x="17.78" y="66.04" size="1.27" layer="97" font="vector" ratio="15">PC0, PC1, PC2, PC3 - HW revision selection</text>
-<text x="17.78" y="63.5" size="1.27" layer="97" font="vector" ratio="15">Do not populate R1 to identify OREL</text>
 <wire x1="160.02" y1="167.64" x2="160.02" y2="132.08" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="160.02" y1="132.08" x2="205.74" y2="132.08" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="205.74" y1="132.08" x2="205.74" y2="167.64" width="0.1524" layer="97" style="shortdash"/>
@@ -5841,6 +5837,16 @@ http://www.txccrystal.com/images/pdf/7m-accuracy.pdf</description>
 <text x="218.44" y="55.88" size="2.54" layer="97" font="vector" ratio="15">Thermometer</text>
 <text x="139.7" y="63.5" size="1.27" layer="97" font="vector">Place R26 TO WRITE PROTECT</text>
 <text x="139.7" y="40.64" size="1.778" layer="97">WP pin pull up is optional</text>
+<text x="17.78" y="58.42" size="1.778" layer="97">HW ID bit order
+PC0 - bit 0
+PC1 - bit 1
+PC2 - bit 2
+PC3 - bit 3</text>
+<text x="17.78" y="43.18" size="1.778" layer="97">KOTLETA hw id is 2(0b0010)
+PC0 is 0
+PC1 is 1
+PC3 is 0
+PC4 is 0</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes">
@@ -6096,12 +6102,6 @@ http://www.txccrystal.com/images/pdf/7m-accuracy.pdf</description>
 </instance>
 <instance part="FD3" gate="G$1" x="134.62" y="10.16" smashed="yes"/>
 <instance part="FD4" gate="G$1" x="124.46" y="10.16" smashed="yes"/>
-<instance part="R1" gate="G$1" x="40.64" y="101.6" smashed="yes" rot="R180">
-<attribute name="NAME" x="40.64" y="101.6" size="1.27" layer="95" rot="R180" align="center"/>
-<attribute name="VALUE" x="40.894" y="103.632" size="0.762" layer="96" rot="R180" align="bottom-right"/>
-<attribute name="PACKAGE" x="44.45" y="101.092" size="0.508" layer="95" rot="R180" align="center"/>
-<attribute name="TOLERANCE" x="40.386" y="103.632" size="0.762" layer="96" rot="R180"/>
-</instance>
 <instance part="R26" gate="G$1" x="172.72" y="66.04" smashed="yes" rot="R270">
 <attribute name="PARTNO" x="172.72" y="66.04" size="1.778" layer="96" rot="R270" display="off"/>
 <attribute name="NAME" x="172.72" y="66.04" size="1.27" layer="95" rot="R270" align="center"/>
@@ -6170,12 +6170,6 @@ http://www.txccrystal.com/images/pdf/7m-accuracy.pdf</description>
 </instance>
 <instance part="PAD16" gate="G$1" x="248.92" y="119.38" smashed="yes" rot="MR0">
 <attribute name="NAME" x="248.92" y="120.65" size="1.27" layer="95" font="vector" ratio="15" rot="MR0" align="center"/>
-</instance>
-<instance part="R29" gate="G$1" x="40.64" y="99.06" smashed="yes" rot="R180">
-<attribute name="NAME" x="40.64" y="99.06" size="1.27" layer="95" rot="R180" align="center"/>
-<attribute name="VALUE" x="40.894" y="101.092" size="0.762" layer="96" rot="R180" align="bottom-right"/>
-<attribute name="PACKAGE" x="44.45" y="98.552" size="0.508" layer="95" rot="R180" align="center"/>
-<attribute name="TOLERANCE" x="40.386" y="101.092" size="0.762" layer="96" rot="R180"/>
 </instance>
 <instance part="P+12" gate="G$1" x="31.75" y="99.06" smashed="yes" rot="R90">
 <attribute name="VALUE" x="28.194" y="99.06" size="1.27" layer="96" font="vector" ratio="15" rot="R90" align="center"/>
@@ -6375,7 +6369,9 @@ http://www.txccrystal.com/images/pdf/7m-accuracy.pdf</description>
 <junction x="17.78" y="93.98"/>
 <wire x1="35.56" y1="101.6" x2="17.78" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="17.78" y1="101.6" x2="17.78" y2="99.06" width="0.1524" layer="91"/>
-<pinref part="R1" gate="G$1" pin="2"/>
+<pinref part="IC1" gate="G$1" pin="PC0"/>
+<wire x1="53.34" y1="101.6" x2="45.72" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="101.6" x2="35.56" y2="101.6" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C3" gate="G$1" pin="1"/>
@@ -6707,9 +6703,11 @@ http://www.txccrystal.com/images/pdf/7m-accuracy.pdf</description>
 <wire x1="119.38" y1="167.64" x2="119.38" y2="165.1" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="R29" gate="G$1" pin="2"/>
 <pinref part="P+12" gate="G$1" pin="VDD_3V3"/>
 <wire x1="35.56" y1="99.06" x2="31.75" y2="99.06" width="0.1524" layer="91"/>
+<pinref part="IC1" gate="G$1" pin="PC1"/>
+<wire x1="53.34" y1="99.06" x2="45.72" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="99.06" x2="35.56" y2="99.06" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$22" class="0">
@@ -6812,13 +6810,6 @@ http://www.txccrystal.com/images/pdf/7m-accuracy.pdf</description>
 <wire x1="137.16" y1="91.44" x2="147.32" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$9" class="0">
-<segment>
-<pinref part="IC1" gate="G$1" pin="PC0"/>
-<wire x1="53.34" y1="101.6" x2="45.72" y2="101.6" width="0.1524" layer="91"/>
-<pinref part="R1" gate="G$1" pin="1"/>
-</segment>
-</net>
 <net name="N$10" class="0">
 <segment>
 <pinref part="IC2" gate="G$1" pin="WP"/>
@@ -6909,13 +6900,6 @@ http://www.txccrystal.com/images/pdf/7m-accuracy.pdf</description>
 <wire x1="104.14" y1="147.32" x2="99.06" y2="147.32" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="G$1" pin="PC11"/>
 <wire x1="99.06" y1="147.32" x2="99.06" y2="134.62" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$15" class="0">
-<segment>
-<pinref part="IC1" gate="G$1" pin="PC1"/>
-<pinref part="R29" gate="G$1" pin="1"/>
-<wire x1="53.34" y1="99.06" x2="45.72" y2="99.06" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
@@ -8295,7 +8279,7 @@ Vout max = 11.06</text>
 <pinref part="R27" gate="G$1" pin="2"/>
 <wire x1="139.7" y1="83.82" x2="139.7" y2="86.36" width="0.1524" layer="91"/>
 <junction x="139.7" y="86.36"/>
-<pinref part="+P1" gate="G$1" pin="VDD_9V"/>
+<pinref part="+P1" gate="G$1" pin="VDD_10V5"/>
 <wire x1="139.7" y1="86.36" x2="139.7" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="C36" gate="G$1" pin="1"/>
 <wire x1="144.78" y1="83.82" x2="144.78" y2="86.36" width="0.1524" layer="91"/>
@@ -8319,7 +8303,7 @@ Vout max = 11.06</text>
 <wire x1="25.4" y1="119.38" x2="27.94" y2="119.38" width="0.1524" layer="91"/>
 <wire x1="25.4" y1="121.92" x2="25.4" y2="119.38" width="0.1524" layer="91"/>
 <junction x="25.4" y="119.38"/>
-<pinref part="+P12" gate="G$1" pin="VDD_9V"/>
+<pinref part="+P12" gate="G$1" pin="VDD_10V5"/>
 </segment>
 </net>
 <net name="N$20" class="0">
