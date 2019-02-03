@@ -1521,6 +1521,86 @@ package type TQ</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="4K7" urn="urn:adsk.eagle:component:2539519/2" prefix="R" library_version="3" library_locally_modified="yes">
+<gates>
+<gate name="G$1" symbol="R-EU" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-0402" package="R0402">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:2539512/2"/>
+</package3dinstances>
+<technologies>
+<technology name="-1%">
+<attribute name="DIGIKEY#" value="311-4.7KLRCT-ND" constant="no"/>
+<attribute name="MANF" value="Yageo" constant="no"/>
+<attribute name="MANF#" value="RC0402FR-074K7L" constant="no"/>
+<attribute name="PACKAGE" value="0402" constant="no"/>
+<attribute name="TOLERANCE" value="1%" constant="no"/>
+<attribute name="VALUE" value="4K7" constant="no"/>
+</technology>
+<technology name="-5%">
+<attribute name="DIGIKEY#" value="311-4.7KJRCT-ND" constant="no"/>
+<attribute name="MANF" value="Yageo" constant="no"/>
+<attribute name="MANF#" value="RC0402JR-074K7L" constant="no"/>
+<attribute name="PACKAGE" value="0402" constant="no"/>
+<attribute name="TOLERANCE" value="5%" constant="no"/>
+<attribute name="VALUE" value="4K7" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-0603" package="R0603">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:2539515/2"/>
+</package3dinstances>
+<technologies>
+<technology name="-1%">
+<attribute name="DIGIKEY#" value="311-4.70KHRCT-ND" constant="no"/>
+<attribute name="MANF" value="Yageo" constant="no"/>
+<attribute name="MANF#" value="RC0603FR-074K7L" constant="no"/>
+<attribute name="PACKAGE" value="0603" constant="no"/>
+<attribute name="TOLERANCE" value="1%" constant="no"/>
+<attribute name="VALUE" value="4K7" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-0805" package="R0805">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:2539516/2"/>
+</package3dinstances>
+<technologies>
+<technology name="-1%">
+<attribute name="DIGIKEY#" value="311-4.70KCRCT-ND" constant="no"/>
+<attribute name="MANF" value="Yageo" constant="no"/>
+<attribute name="MANF#" value="RC0805FR-074K7L" constant="no"/>
+<attribute name="PACKAGE" value="0805" constant="no"/>
+<attribute name="TOLERANCE" value="1%" constant="no"/>
+<attribute name="VALUE" value="4K7" constant="no"/>
+</technology>
+<technology name="-5%">
+<attribute name="DIGIKEY#" value="RMCF0805JT4K70CT-ND" constant="no"/>
+<attribute name="MANF" value="Yageo" constant="no"/>
+<attribute name="MANF#" value="RMCF0805JT4K70" constant="no"/>
+<attribute name="PACKAGE" value="0805" constant="no"/>
+<attribute name="TOLERANCE" value="5%" constant="no"/>
+<attribute name="VALUE" value="4K7" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 <deviceset name="3K9" urn="urn:adsk.eagle:component:2539520/2" prefix="R" library_version="3" library_locally_modified="yes">
 <gates>
 <gate name="G$1" symbol="R-EU" x="0" y="0"/>
@@ -3057,35 +3137,6 @@ package type TQ</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="2.2NF" urn="urn:adsk.eagle:component:2539400/2" prefix="C" library_version="8">
-<gates>
-<gate name="G$1" symbol="C" x="0" y="0"/>
-</gates>
-<devices>
-<device name="-0402" package="C0402">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:2539379/2"/>
-</package3dinstances>
-<technologies>
-<technology name="-50V_10%_X7R">
-<attribute name="DIGIKEY#" value="478-1105-1-ND" constant="no"/>
-<attribute name="MANF" value="AVX Corporation" constant="no"/>
-<attribute name="MANF#" value="04025C222KAT2A" constant="no"/>
-<attribute name="OPERATING_TEMP" value="-55°C ~ 125°C" constant="no"/>
-<attribute name="PACKAGE" value="0402" constant="no"/>
-<attribute name="TC" value="X7R" constant="no"/>
-<attribute name="TOLERANCE" value="+-10%" constant="no"/>
-<attribute name="VALUE" value="2.2nF" constant="no"/>
-<attribute name="VOLTAGE" value="50V" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="22µF" urn="urn:adsk.eagle:component:2539384/2" prefix="C" library_version="8">
 <gates>
 <gate name="G$1" symbol="C" x="0" y="0"/>
@@ -3533,6 +3584,57 @@ package type TQ</description>
 <attribute name="TOLERANCE" value="+-5%" constant="no"/>
 <attribute name="VALUE" value="18pF" constant="no"/>
 <attribute name="VOLTAGE" value="50V" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="1800PF" urn="urn:adsk.eagle:component:8642420/1" prefix="C" library_version="9">
+<gates>
+<gate name="G$1" symbol="C" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-0402" package="C0402">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:2539379/2"/>
+</package3dinstances>
+<technologies>
+<technology name="-50V_10%_X7R">
+<attribute name="DIGIKEY#" value="311-1721-1-ND" constant="no"/>
+<attribute name="MANF" value="Yageo" constant="no"/>
+<attribute name="MANF#" value="CC0402KRX7R9BB182" constant="no"/>
+<attribute name="OPERATING_TEMP" value="-55°C ~ 125°C" constant="no"/>
+<attribute name="PACKAGE" value="0402" constant="no"/>
+<attribute name="TC" value="X7R" constant="no"/>
+<attribute name="TOLERANCE" value="±10%" constant="no"/>
+<attribute name="VALUE" value="1800pF" constant="no"/>
+<attribute name="VOLTAGE" value="50V" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-0603" package="C0603">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:2539381/2"/>
+</package3dinstances>
+<technologies>
+<technology name="-16V_10%_X7R">
+<attribute name="DIGIKEY#" value="" constant="no"/>
+<attribute name="MANF" value="" constant="no"/>
+<attribute name="MANF#" value="" constant="no"/>
+<attribute name="OPERATING_TEMP" value="" constant="no"/>
+<attribute name="PACKAGE" value="" constant="no"/>
+<attribute name="TC" value="" constant="no"/>
+<attribute name="TOLERANCE" value="" constant="no"/>
+<attribute name="VALUE" value="" constant="no"/>
+<attribute name="VOLTAGE" value="" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -5497,8 +5599,8 @@ http://www.txccrystal.com/images/pdf/7m-accuracy.pdf</description>
 <part name="C23" library="C_digikey" library_urn="urn:adsk.eagle:library:2539367" deviceset="22µF" device="-1206" package3d_urn="urn:adsk.eagle:package:2539382/2" technology="-35V_20%_X5R" value="22µF"/>
 <part name="C25" library="C_digikey" library_urn="urn:adsk.eagle:library:2539367" deviceset="22µF" device="-1206" package3d_urn="urn:adsk.eagle:package:2539382/2" technology="-35V_20%_X5R" value="22µF"/>
 <part name="C26" library="C_digikey" library_urn="urn:adsk.eagle:library:2539367" deviceset="22µF" device="-1206" package3d_urn="urn:adsk.eagle:package:2539382/2" technology="-35V_20%_X5R" value="22µF"/>
-<part name="C24" library="C_digikey" library_urn="urn:adsk.eagle:library:2539367" deviceset="2.2NF" device="-0402" package3d_urn="urn:adsk.eagle:package:2539379/2" technology="-50V_10%_X7R" value="2.2nF"/>
-<part name="R13" library="R_digikey" library_urn="urn:adsk.eagle:library:2539499" deviceset="3K9" device="-0402" package3d_urn="urn:adsk.eagle:package:2539512/2" technology="-1%" value="3K9"/>
+<part name="C24" library="C_digikey" library_urn="urn:adsk.eagle:library:2539367" deviceset="1800PF" device="-0402" package3d_urn="urn:adsk.eagle:package:2539379/2" technology="-50V_10%_X7R" value="1800pF"/>
+<part name="R13" library="R_digikey" library_urn="urn:adsk.eagle:library:2539499" deviceset="4K7" device="-0402" package3d_urn="urn:adsk.eagle:package:2539512/2" technology="-1%" value="4K7"/>
 <part name="R10" library="R_digikey" library_urn="urn:adsk.eagle:library:2539499" deviceset="560R" device="-0402" package3d_urn="urn:adsk.eagle:package:2539512/2" technology="-1%" value="560R"/>
 <part name="Q1" library="mosfet" library_urn="urn:adsk.eagle:library:2640523" deviceset="CSD18510Q5B" device="" package3d_urn="urn:adsk.eagle:package:1040149/4"/>
 <part name="Q2" library="mosfet" library_urn="urn:adsk.eagle:library:2640523" deviceset="CSD18510Q5B" device="" package3d_urn="urn:adsk.eagle:package:1040149/4"/>
@@ -5507,8 +5609,8 @@ http://www.txccrystal.com/images/pdf/7m-accuracy.pdf</description>
 </part>
 <part name="R12" library="R_digikey" library_urn="urn:adsk.eagle:library:2539499" deviceset="3R" device="-0402" package3d_urn="urn:adsk.eagle:package:2539512/2" technology="-5%" value="3R"/>
 <part name="R11" library="R_digikey" library_urn="urn:adsk.eagle:library:2539499" deviceset="3R" device="-0402" package3d_urn="urn:adsk.eagle:package:2539512/2" technology="-5%" value="3R"/>
-<part name="C30" library="C_digikey" library_urn="urn:adsk.eagle:library:2539367" deviceset="2.2NF" device="-0402" package3d_urn="urn:adsk.eagle:package:2539379/2" technology="-50V_10%_X7R" value="2.2nF"/>
-<part name="R18" library="R_digikey" library_urn="urn:adsk.eagle:library:2539499" deviceset="3K9" device="-0402" package3d_urn="urn:adsk.eagle:package:2539512/2" technology="-1%" value="3K9"/>
+<part name="C30" library="C_digikey" library_urn="urn:adsk.eagle:library:2539367" deviceset="1800PF" device="-0402" package3d_urn="urn:adsk.eagle:package:2539379/2" technology="-50V_10%_X7R" value="1800pF"/>
+<part name="R18" library="R_digikey" library_urn="urn:adsk.eagle:library:2539499" deviceset="4K7" device="-0402" package3d_urn="urn:adsk.eagle:package:2539512/2" technology="-1%" value="4K7"/>
 <part name="R15" library="R_digikey" library_urn="urn:adsk.eagle:library:2539499" deviceset="560R" device="-0402" package3d_urn="urn:adsk.eagle:package:2539512/2" technology="-1%" value="560R"/>
 <part name="Q3" library="mosfet" library_urn="urn:adsk.eagle:library:2640523" deviceset="CSD18510Q5B" device="" package3d_urn="urn:adsk.eagle:package:1040149/4"/>
 <part name="Q4" library="mosfet" library_urn="urn:adsk.eagle:library:2640523" deviceset="CSD18510Q5B" device="" package3d_urn="urn:adsk.eagle:package:1040149/4"/>
@@ -5517,8 +5619,8 @@ http://www.txccrystal.com/images/pdf/7m-accuracy.pdf</description>
 </part>
 <part name="R17" library="R_digikey" library_urn="urn:adsk.eagle:library:2539499" deviceset="3R" device="-0402" package3d_urn="urn:adsk.eagle:package:2539512/2" technology="-5%" value="3R"/>
 <part name="R16" library="R_digikey" library_urn="urn:adsk.eagle:library:2539499" deviceset="3R" device="-0402" package3d_urn="urn:adsk.eagle:package:2539512/2" technology="-5%" value="3R"/>
-<part name="C32" library="C_digikey" library_urn="urn:adsk.eagle:library:2539367" deviceset="2.2NF" device="-0402" package3d_urn="urn:adsk.eagle:package:2539379/2" technology="-50V_10%_X7R" value="2.2nF"/>
-<part name="R22" library="R_digikey" library_urn="urn:adsk.eagle:library:2539499" deviceset="3K9" device="-0402" package3d_urn="urn:adsk.eagle:package:2539512/2" technology="-1%" value="3K9"/>
+<part name="C32" library="C_digikey" library_urn="urn:adsk.eagle:library:2539367" deviceset="1800PF" device="-0402" package3d_urn="urn:adsk.eagle:package:2539379/2" technology="-50V_10%_X7R" value="1800pF"/>
+<part name="R22" library="R_digikey" library_urn="urn:adsk.eagle:library:2539499" deviceset="4K7" device="-0402" package3d_urn="urn:adsk.eagle:package:2539512/2" technology="-1%" value="4K7"/>
 <part name="R19" library="R_digikey" library_urn="urn:adsk.eagle:library:2539499" deviceset="560R" device="-0402" package3d_urn="urn:adsk.eagle:package:2539512/2" technology="-1%" value="560R"/>
 <part name="Q5" library="mosfet" library_urn="urn:adsk.eagle:library:2640523" deviceset="CSD18510Q5B" device="" package3d_urn="urn:adsk.eagle:package:1040149/4"/>
 <part name="Q6" library="mosfet" library_urn="urn:adsk.eagle:library:2640523" deviceset="CSD18510Q5B" device="" package3d_urn="urn:adsk.eagle:package:1040149/4"/>
