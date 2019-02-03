@@ -4535,10 +4535,22 @@ http://www.txccrystal.com/images/pdf/7m-accuracy.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:8637302/2"/>
 </package3dinstances>
 <technologies>
+<technology name="-0.001R">
+<attribute name="DIGIKEY#" value="CSNL2010FT1L00TR-ND" constant="no"/>
+<attribute name="MANF" value="Stackpole Electronics Inc." constant="no"/>
+<attribute name="MANF#" value="CSNL2010FT1L00" constant="no"/>
+<attribute name="POWER" value="1.5W" constant="no"/>
+<attribute name="TC" value="±50ppm/°C" constant="no"/>
+<attribute name="TOLERANCE" value="1%" constant="no"/>
+<attribute name="VALUE" value="0.001R" constant="no"/>
+</technology>
 <technology name="-0.005R">
 <attribute name="DIGIKEY#" value="CSNL2010FT5L00CT-ND" constant="no"/>
 <attribute name="MANF" value="Stackpole Electronics Inc." constant="no"/>
 <attribute name="MANF#" value="CSNL2010FT5L00" constant="no"/>
+<attribute name="POWER" value="1.5W" constant="no"/>
+<attribute name="TC" value="±50ppm/°C" constant="no"/>
+<attribute name="TOLERANCE" value="1%" constant="no"/>
 <attribute name="VALUE" value="0.005R" constant="no"/>
 </technology>
 </technologies>
@@ -5388,6 +5400,7 @@ http://www.txccrystal.com/images/pdf/7m-accuracy.pdf</description>
 <attributes>
 </attributes>
 <variantdefs>
+<variantdef name="basic"/>
 </variantdefs>
 <classes>
 <class number="0" name="default" width="0" drill="0">
@@ -5429,7 +5442,7 @@ http://www.txccrystal.com/images/pdf/7m-accuracy.pdf</description>
 <part name="C8" library="C_digikey" library_urn="urn:adsk.eagle:library:2539367" deviceset="4.7µF" device="-0603" package3d_urn="urn:adsk.eagle:package:2539381/2" technology="-6.3V_10%_X7R" value="4.7µF"/>
 <part name="C7" library="C_digikey" library_urn="urn:adsk.eagle:library:2539367" deviceset="0.1µF" device="-0402" package3d_urn="urn:adsk.eagle:package:2539379/2" technology="-16V_10%_X7R" value="0.1µF"/>
 <part name="C3" library="C_digikey" library_urn="urn:adsk.eagle:library:2539367" deviceset="10NF" device="-0402" package3d_urn="urn:adsk.eagle:package:2539379/2" technology="-25V_10%_X7R" value="10nF"/>
-<part name="C4" library="C_digikey" library_urn="urn:adsk.eagle:library:2539367" deviceset="1µF" device="-0603" package3d_urn="urn:adsk.eagle:package:2539381/2" technology="-10V_10%_X7R" value="1µF"/>
+<part name="C4" library="C_digikey" library_urn="urn:adsk.eagle:library:2539367" deviceset="1µF" device="-0603" package3d_urn="urn:adsk.eagle:package:2539381/2" technology="-50V_10%_X7R" value="1µF"/>
 <part name="IC3" library="serial_interfaces" library_urn="urn:adsk.eagle:library:4770999" deviceset="SN65HVD232D" device="" package3d_urn="urn:adsk.eagle:package:4771007/3"/>
 <part name="C11" library="C_digikey" library_urn="urn:adsk.eagle:library:2539367" deviceset="0.1µF" device="-0402" package3d_urn="urn:adsk.eagle:package:2539379/2" technology="-16V_10%_X7R" value="0.1µF"/>
 <part name="P+11" library="sapog_reference_hardware" deviceset="3.3V" device=""/>
@@ -5468,8 +5481,12 @@ http://www.txccrystal.com/images/pdf/7m-accuracy.pdf</description>
 <part name="R9" library="R_digikey" library_urn="urn:adsk.eagle:library:2539499" deviceset="10K" device="-0402" package3d_urn="urn:adsk.eagle:package:2539512/2" technology="-0.1%" value="10K"/>
 <part name="R8" library="R_digikey" library_urn="urn:adsk.eagle:library:2539499" deviceset="1K3" device="-0402" package3d_urn="urn:adsk.eagle:package:2539512/2" technology="-0.1%" value="1K3"/>
 <part name="C15" library="C_digikey" library_urn="urn:adsk.eagle:library:2539367" deviceset="0.1µF" device="-0402" package3d_urn="urn:adsk.eagle:package:2539379/2" technology="-16V_10%_X7R" value="0.1µF"/>
-<part name="B+" library="valenok_master_library" deviceset="WIREPAD" device="SMD5-2,5"/>
-<part name="B-" library="valenok_master_library" deviceset="WIREPAD" device="SMD5-2,5"/>
+<part name="B+" library="valenok_master_library" deviceset="WIREPAD" device="SMD5-2,5">
+<variant name="basic" populate="no"/>
+</part>
+<part name="B-" library="valenok_master_library" deviceset="WIREPAD" device="SMD5-2,5">
+<variant name="basic" populate="no"/>
+</part>
 <part name="C16" library="C_digikey" library_urn="urn:adsk.eagle:library:2539367" deviceset="22µF" device="-1206" package3d_urn="urn:adsk.eagle:package:2539382/2" technology="-35V_20%_X5R" value="22µF"/>
 <part name="C17" library="C_digikey" library_urn="urn:adsk.eagle:library:2539367" deviceset="22µF" device="-1206" package3d_urn="urn:adsk.eagle:package:2539382/2" technology="-35V_20%_X5R" value="22µF"/>
 <part name="C18" library="C_digikey" library_urn="urn:adsk.eagle:library:2539367" deviceset="22µF" device="-1206" package3d_urn="urn:adsk.eagle:package:2539382/2" technology="-35V_20%_X5R" value="22µF"/>
@@ -5485,7 +5502,9 @@ http://www.txccrystal.com/images/pdf/7m-accuracy.pdf</description>
 <part name="R10" library="R_digikey" library_urn="urn:adsk.eagle:library:2539499" deviceset="560R" device="-0402" package3d_urn="urn:adsk.eagle:package:2539512/2" technology="-1%" value="560R"/>
 <part name="Q1" library="mosfet" library_urn="urn:adsk.eagle:library:2640523" deviceset="CSD18510Q5B" device="" package3d_urn="urn:adsk.eagle:package:1040149/4"/>
 <part name="Q2" library="mosfet" library_urn="urn:adsk.eagle:library:2640523" deviceset="CSD18510Q5B" device="" package3d_urn="urn:adsk.eagle:package:1040149/4"/>
-<part name="A" library="valenok_master_library" deviceset="WIREPAD" device="SMD5-2,5"/>
+<part name="A" library="valenok_master_library" deviceset="WIREPAD" device="SMD5-2,5">
+<variant name="basic" populate="no"/>
+</part>
 <part name="R12" library="R_digikey" library_urn="urn:adsk.eagle:library:2539499" deviceset="3R" device="-0402" package3d_urn="urn:adsk.eagle:package:2539512/2" technology="-5%" value="3R"/>
 <part name="R11" library="R_digikey" library_urn="urn:adsk.eagle:library:2539499" deviceset="3R" device="-0402" package3d_urn="urn:adsk.eagle:package:2539512/2" technology="-5%" value="3R"/>
 <part name="C30" library="C_digikey" library_urn="urn:adsk.eagle:library:2539367" deviceset="2.2NF" device="-0402" package3d_urn="urn:adsk.eagle:package:2539379/2" technology="-50V_10%_X7R" value="2.2nF"/>
@@ -5493,7 +5512,9 @@ http://www.txccrystal.com/images/pdf/7m-accuracy.pdf</description>
 <part name="R15" library="R_digikey" library_urn="urn:adsk.eagle:library:2539499" deviceset="560R" device="-0402" package3d_urn="urn:adsk.eagle:package:2539512/2" technology="-1%" value="560R"/>
 <part name="Q3" library="mosfet" library_urn="urn:adsk.eagle:library:2640523" deviceset="CSD18510Q5B" device="" package3d_urn="urn:adsk.eagle:package:1040149/4"/>
 <part name="Q4" library="mosfet" library_urn="urn:adsk.eagle:library:2640523" deviceset="CSD18510Q5B" device="" package3d_urn="urn:adsk.eagle:package:1040149/4"/>
-<part name="B" library="valenok_master_library" deviceset="WIREPAD" device="SMD5-2,5"/>
+<part name="B" library="valenok_master_library" deviceset="WIREPAD" device="SMD5-2,5">
+<variant name="basic" populate="no"/>
+</part>
 <part name="R17" library="R_digikey" library_urn="urn:adsk.eagle:library:2539499" deviceset="3R" device="-0402" package3d_urn="urn:adsk.eagle:package:2539512/2" technology="-5%" value="3R"/>
 <part name="R16" library="R_digikey" library_urn="urn:adsk.eagle:library:2539499" deviceset="3R" device="-0402" package3d_urn="urn:adsk.eagle:package:2539512/2" technology="-5%" value="3R"/>
 <part name="C32" library="C_digikey" library_urn="urn:adsk.eagle:library:2539367" deviceset="2.2NF" device="-0402" package3d_urn="urn:adsk.eagle:package:2539379/2" technology="-50V_10%_X7R" value="2.2nF"/>
@@ -5501,7 +5522,9 @@ http://www.txccrystal.com/images/pdf/7m-accuracy.pdf</description>
 <part name="R19" library="R_digikey" library_urn="urn:adsk.eagle:library:2539499" deviceset="560R" device="-0402" package3d_urn="urn:adsk.eagle:package:2539512/2" technology="-1%" value="560R"/>
 <part name="Q5" library="mosfet" library_urn="urn:adsk.eagle:library:2640523" deviceset="CSD18510Q5B" device="" package3d_urn="urn:adsk.eagle:package:1040149/4"/>
 <part name="Q6" library="mosfet" library_urn="urn:adsk.eagle:library:2640523" deviceset="CSD18510Q5B" device="" package3d_urn="urn:adsk.eagle:package:1040149/4"/>
-<part name="C" library="valenok_master_library" deviceset="WIREPAD" device="SMD5-2,5"/>
+<part name="C" library="valenok_master_library" deviceset="WIREPAD" device="SMD5-2,5">
+<variant name="basic" populate="no"/>
+</part>
 <part name="R21" library="R_digikey" library_urn="urn:adsk.eagle:library:2539499" deviceset="3R" device="-0402" package3d_urn="urn:adsk.eagle:package:2539512/2" technology="-5%" value="3R"/>
 <part name="R20" library="R_digikey" library_urn="urn:adsk.eagle:library:2539499" deviceset="3R" device="-0402" package3d_urn="urn:adsk.eagle:package:2539512/2" technology="-5%" value="3R"/>
 <part name="P+14" library="sapog_reference_hardware" deviceset="3.3V" device=""/>
@@ -5512,7 +5535,7 @@ http://www.txccrystal.com/images/pdf/7m-accuracy.pdf</description>
 <part name="GND31" library="sapog_reference_hardware" deviceset="GND" device=""/>
 <part name="GND28" library="sapog_reference_hardware" deviceset="GND" device=""/>
 <part name="GND26" library="sapog_reference_hardware" deviceset="GND" device=""/>
-<part name="C28" library="C_digikey" library_urn="urn:adsk.eagle:library:2539367" deviceset="1µF" device="-0603" package3d_urn="urn:adsk.eagle:package:2539381/2" technology="-10V_10%_X5R" value="1µF"/>
+<part name="C28" library="C_digikey" library_urn="urn:adsk.eagle:library:2539367" deviceset="1µF" device="-0603" package3d_urn="urn:adsk.eagle:package:2539381/2" technology="-50V_10%_X7R" value="1µF"/>
 <part name="C14" library="C_digikey" library_urn="urn:adsk.eagle:library:2539367" deviceset="0.1µF" device="-0402" package3d_urn="urn:adsk.eagle:package:2539379/2" technology="-16V_10%_X7R" value="0.1µF"/>
 <part name="GND27" library="sapog_reference_hardware" deviceset="GND" device=""/>
 <part name="GND29" library="sapog_reference_hardware" deviceset="GND" device=""/>
@@ -5526,8 +5549,12 @@ http://www.txccrystal.com/images/pdf/7m-accuracy.pdf</description>
 <part name="IC7" library="misc" library_urn="urn:adsk.eagle:library:5347860" deviceset="ZXCT1051" device="" package3d_urn="urn:adsk.eagle:package:5347863/6"/>
 <part name="GND11" library="sapog_reference_hardware" deviceset="GND" device=""/>
 <part name="GND10" library="sapog_reference_hardware" deviceset="GND" device=""/>
-<part name="FD2" library="sapog_reference_hardware" deviceset="FIDUCIALMOUNT" device=""/>
-<part name="FD1" library="sapog_reference_hardware" deviceset="FIDUCIALMOUNT" device=""/>
+<part name="FD2" library="sapog_reference_hardware" deviceset="FIDUCIALMOUNT" device="">
+<variant name="basic" populate="no"/>
+</part>
+<part name="FD1" library="sapog_reference_hardware" deviceset="FIDUCIALMOUNT" device="">
+<variant name="basic" populate="no"/>
+</part>
 <part name="P+6" library="sapog_reference_hardware" deviceset="3.3V" device=""/>
 <part name="P+7" library="sapog_reference_hardware" deviceset="3.3V" device=""/>
 <part name="IC2" library="misc" library_urn="urn:adsk.eagle:library:5347860" deviceset="CAT24C02" device="" package3d_urn="urn:adsk.eagle:package:5347863/6"/>
@@ -5546,43 +5573,52 @@ http://www.txccrystal.com/images/pdf/7m-accuracy.pdf</description>
 <part name="R25" library="R_digikey" library_urn="urn:adsk.eagle:library:2539499" deviceset="200R" device="-0402" package3d_urn="urn:adsk.eagle:package:2539512/2" technology="-5%" value="200R">
 <attribute name="PARTNO" value="RC0402FR-07240RL"/>
 </part>
-<part name="FD3" library="sapog_reference_hardware" deviceset="FIDUCIALMOUNT" device=""/>
-<part name="FD4" library="sapog_reference_hardware" deviceset="FIDUCIALMOUNT" device=""/>
-<part name="R1" library="R_digikey" library_urn="urn:adsk.eagle:library:2539499" deviceset="200R" device="-0402" package3d_urn="urn:adsk.eagle:package:2539512/2" technology="-5%" value="200R">
-<attribute name="ASSEMBLY" value="DNM"/>
+<part name="FD3" library="sapog_reference_hardware" deviceset="FIDUCIALMOUNT" device="">
+<variant name="basic" populate="no"/>
 </part>
+<part name="FD4" library="sapog_reference_hardware" deviceset="FIDUCIALMOUNT" device="">
+<variant name="basic" populate="no"/>
+</part>
+<part name="R1" library="R_digikey" library_urn="urn:adsk.eagle:library:2539499" deviceset="200R" device="-0402" package3d_urn="urn:adsk.eagle:package:2539512/2" technology="-5%" value="200R"/>
 <part name="R26" library="R_digikey" library_urn="urn:adsk.eagle:library:2539499" deviceset="200R" device="-0402" package3d_urn="urn:adsk.eagle:package:2539512/2" technology="-5%" value="200R">
-<attribute name="ASSEMBLY" value="DNM"/>
 <attribute name="PARTNO" value="RC0402FR-07240RL"/>
+<variant name="basic" populate="no"/>
 </part>
 <part name="GND18" library="supply_symbols" deviceset="GNDD" device="" value="GNDD"/>
 <part name="GND22" library="supply_symbols" deviceset="GNDD" device="" value="GNDD"/>
 <part name="GND24" library="supply_symbols" deviceset="GNDD" device="" value="GNDD"/>
 <part name="GND39" library="supply_symbols" deviceset="GNDD" device="" value="GNDD"/>
 <part name="GND40" library="sapog_reference_hardware" deviceset="GND" device=""/>
-<part name="U$2" library="GNSS2_master_lib" deviceset="CONNECTION" device=""/>
+<part name="U$2" library="GNSS2_master_lib" deviceset="CONNECTION" device="">
+<variant name="basic" populate="no"/>
+</part>
 <part name="TP2" library="pixhawk2" deviceset="PAD" device=".05">
 <attribute name="BOM" value="EXCLUDE"/>
 <attribute name="PARTNO" value="*"/>
+<variant name="basic" populate="no"/>
 </part>
 <part name="TP1" library="pixhawk2" deviceset="PAD" device=".05">
 <attribute name="BOM" value="EXCLUDE"/>
 <attribute name="PARTNO" value="*"/>
+<variant name="basic" populate="no"/>
 </part>
 <part name="TP3" library="pixhawk2" deviceset="PAD" device=".05">
 <attribute name="BOM" value="EXCLUDE"/>
 <attribute name="PARTNO" value="*"/>
+<variant name="basic" populate="no"/>
 </part>
 <part name="GND41" library="sapog_reference_hardware" deviceset="GND" device=""/>
 <part name="TP4" library="pixhawk2" deviceset="PAD" device=".05">
 <attribute name="BOM" value="EXCLUDE"/>
 <attribute name="PARTNO" value="*"/>
+<variant name="basic" populate="no"/>
 </part>
 <part name="P+16" library="sapog_reference_hardware" deviceset="3.3V" device=""/>
 <part name="GND42" library="sapog_reference_hardware" deviceset="GND" device=""/>
 <part name="TP5" library="pixhawk2" deviceset="PAD" device=".05">
 <attribute name="BOM" value="EXCLUDE"/>
 <attribute name="PARTNO" value="*"/>
+<variant name="basic" populate="no"/>
 </part>
 <part name="D6" library="TVS_diodes" library_urn="urn:adsk.eagle:library:3333632" deviceset="1KSMB30AHR5G" device="" package3d_urn="urn:adsk.eagle:package:3333651/3"/>
 <part name="R7" library="R_digikey" library_urn="urn:adsk.eagle:library:2539499" deviceset="3K9" device="-0402" package3d_urn="urn:adsk.eagle:package:2539512/2" technology="-1%" value="3K9"/>
@@ -5618,31 +5654,67 @@ http://www.txccrystal.com/images/pdf/7m-accuracy.pdf</description>
 <part name="C38" library="C_digikey" library_urn="urn:adsk.eagle:library:2539367" deviceset="22µF" device="-1206" package3d_urn="urn:adsk.eagle:package:2539382/2" technology="-35V_20%_X5R" value="22µF"/>
 <part name="GND33" library="sapog_reference_hardware" deviceset="GND" device=""/>
 <part name="+P12" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="9V" device=""/>
-<part name="R14" library="SHUNT_RESISTORS" library_urn="urn:adsk.eagle:library:2644450" deviceset="CURRENT_SHUNT_KELVIN" device="-2010-KELVIN" package3d_urn="urn:adsk.eagle:package:8637302/2" technology="-0.005R" value="0.005R"/>
-<part name="PAD1" library="PADS" library_urn="urn:adsk.eagle:library:3188696" deviceset="PAD" device="-HOLE-0.6" package3d_urn="urn:adsk.eagle:package:6513718/2" value="PAD-HOLE-0.6"/>
-<part name="PAD2" library="PADS" library_urn="urn:adsk.eagle:library:3188696" deviceset="PAD" device="-HOLE-0.6" package3d_urn="urn:adsk.eagle:package:6513718/2" value="PAD-HOLE-0.6"/>
-<part name="PAD3" library="PADS" library_urn="urn:adsk.eagle:library:3188696" deviceset="PAD" device="-HOLE-0.6" package3d_urn="urn:adsk.eagle:package:6513718/2" value="PAD-HOLE-0.6"/>
-<part name="+P5" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="VBAT" device=""/>
-<part name="PAD4" library="PADS" library_urn="urn:adsk.eagle:library:3188696" deviceset="PAD" device="-HOLE-0.6" package3d_urn="urn:adsk.eagle:package:6513718/2" value="PAD-HOLE-0.6"/>
-<part name="PAD5" library="PADS" library_urn="urn:adsk.eagle:library:3188696" deviceset="PAD" device="-HOLE-0.6" package3d_urn="urn:adsk.eagle:package:6513718/2" value="PAD-HOLE-0.6"/>
-<part name="PAD6" library="PADS" library_urn="urn:adsk.eagle:library:3188696" deviceset="PAD" device="-HOLE-0.6" package3d_urn="urn:adsk.eagle:package:6513718/2" value="PAD-HOLE-0.6"/>
-<part name="GND43" library="sapog_reference_hardware" deviceset="GND" device=""/>
-<part name="PAD7" library="PADS" library_urn="urn:adsk.eagle:library:3188696" deviceset="PAD" device="-HOLE-0.6" package3d_urn="urn:adsk.eagle:package:6513718/2" value="PAD-HOLE-0.6"/>
-<part name="PAD8" library="PADS" library_urn="urn:adsk.eagle:library:3188696" deviceset="PAD" device="-HOLE-0.6" package3d_urn="urn:adsk.eagle:package:6513718/2" value="PAD-HOLE-0.6"/>
-<part name="PAD9" library="PADS" library_urn="urn:adsk.eagle:library:3188696" deviceset="PAD" device="-HOLE-0.6" package3d_urn="urn:adsk.eagle:package:6513718/2" value="PAD-HOLE-0.6"/>
-<part name="PAD10" library="PADS" library_urn="urn:adsk.eagle:library:3188696" deviceset="PAD" device="-HOLE-0.6" package3d_urn="urn:adsk.eagle:package:6513718/2" value="PAD-HOLE-0.6"/>
-<part name="PAD11" library="PADS" library_urn="urn:adsk.eagle:library:3188696" deviceset="PAD" device="-HOLE-0.6" package3d_urn="urn:adsk.eagle:package:6513718/2" value="PAD-HOLE-0.6"/>
-<part name="PAD12" library="PADS" library_urn="urn:adsk.eagle:library:3188696" deviceset="PAD" device="-HOLE-0.6" package3d_urn="urn:adsk.eagle:package:6513718/2" value="PAD-HOLE-0.6"/>
-<part name="PAD13" library="PADS" library_urn="urn:adsk.eagle:library:3188696" deviceset="PAD" device="-HOLE-0.6" package3d_urn="urn:adsk.eagle:package:6513718/2" value="PAD-HOLE-0.6"/>
-<part name="PAD14" library="PADS" library_urn="urn:adsk.eagle:library:3188696" deviceset="PAD" device="-HOLE-0.6" package3d_urn="urn:adsk.eagle:package:6513718/2" value="PAD-HOLE-0.6"/>
-<part name="PAD15" library="PADS" library_urn="urn:adsk.eagle:library:3188696" deviceset="PAD" device="-HOLE-0.6" package3d_urn="urn:adsk.eagle:package:6513718/2" value="PAD-HOLE-0.6"/>
-<part name="PAD16" library="PADS" library_urn="urn:adsk.eagle:library:3188696" deviceset="PAD" device="-HOLE-0.6" package3d_urn="urn:adsk.eagle:package:6513718/2" value="PAD-HOLE-0.6"/>
-<part name="PAD17" library="PADS" library_urn="urn:adsk.eagle:library:3188696" deviceset="PAD" device="-HOLE-0.6" package3d_urn="urn:adsk.eagle:package:6513718/2" value="PAD-HOLE-0.6"/>
-<part name="PAD18" library="PADS" library_urn="urn:adsk.eagle:library:3188696" deviceset="PAD" device="-HOLE-0.6" package3d_urn="urn:adsk.eagle:package:6513718/2" value="PAD-HOLE-0.6"/>
-<part name="PAD19" library="PADS" library_urn="urn:adsk.eagle:library:3188696" deviceset="PAD" device="-HOLE-0.6" package3d_urn="urn:adsk.eagle:package:6513718/2" value="PAD-HOLE-0.6"/>
-<part name="R29" library="R_digikey" library_urn="urn:adsk.eagle:library:2539499" deviceset="200R" device="-0402" package3d_urn="urn:adsk.eagle:package:2539512/2" technology="-5%" value="200R">
-<attribute name="ASSEMBLY" value="DNM"/>
+<part name="R14" library="SHUNT_RESISTORS" library_urn="urn:adsk.eagle:library:2644450" deviceset="CURRENT_SHUNT_KELVIN" device="-2010-KELVIN" package3d_urn="urn:adsk.eagle:package:8637302/2" technology="-0.001R" value="0.001R"/>
+<part name="PAD1" library="PADS" library_urn="urn:adsk.eagle:library:3188696" deviceset="PAD" device="-HOLE-0.6" package3d_urn="urn:adsk.eagle:package:6513718/2" value="PAD-HOLE-0.6">
+<variant name="basic" populate="no"/>
 </part>
+<part name="PAD2" library="PADS" library_urn="urn:adsk.eagle:library:3188696" deviceset="PAD" device="-HOLE-0.6" package3d_urn="urn:adsk.eagle:package:6513718/2" value="PAD-HOLE-0.6">
+<variant name="basic" populate="no"/>
+</part>
+<part name="PAD3" library="PADS" library_urn="urn:adsk.eagle:library:3188696" deviceset="PAD" device="-HOLE-0.6" package3d_urn="urn:adsk.eagle:package:6513718/2" value="PAD-HOLE-0.6">
+<variant name="basic" populate="no"/>
+</part>
+<part name="+P5" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="VBAT" device=""/>
+<part name="PAD4" library="PADS" library_urn="urn:adsk.eagle:library:3188696" deviceset="PAD" device="-HOLE-0.6" package3d_urn="urn:adsk.eagle:package:6513718/2" value="PAD-HOLE-0.6">
+<variant name="basic" populate="no"/>
+</part>
+<part name="PAD5" library="PADS" library_urn="urn:adsk.eagle:library:3188696" deviceset="PAD" device="-HOLE-0.6" package3d_urn="urn:adsk.eagle:package:6513718/2" value="PAD-HOLE-0.6">
+<variant name="basic" populate="no"/>
+</part>
+<part name="PAD6" library="PADS" library_urn="urn:adsk.eagle:library:3188696" deviceset="PAD" device="-HOLE-0.6" package3d_urn="urn:adsk.eagle:package:6513718/2" value="PAD-HOLE-0.6">
+<variant name="basic" populate="no"/>
+</part>
+<part name="GND43" library="sapog_reference_hardware" deviceset="GND" device=""/>
+<part name="PAD7" library="PADS" library_urn="urn:adsk.eagle:library:3188696" deviceset="PAD" device="-HOLE-0.6" package3d_urn="urn:adsk.eagle:package:6513718/2" value="PAD-HOLE-0.6">
+<variant name="basic" populate="no"/>
+</part>
+<part name="PAD8" library="PADS" library_urn="urn:adsk.eagle:library:3188696" deviceset="PAD" device="-HOLE-0.6" package3d_urn="urn:adsk.eagle:package:6513718/2" value="PAD-HOLE-0.6">
+<variant name="basic" populate="no"/>
+</part>
+<part name="PAD9" library="PADS" library_urn="urn:adsk.eagle:library:3188696" deviceset="PAD" device="-HOLE-0.6" package3d_urn="urn:adsk.eagle:package:6513718/2" value="PAD-HOLE-0.6">
+<variant name="basic" populate="no"/>
+</part>
+<part name="PAD10" library="PADS" library_urn="urn:adsk.eagle:library:3188696" deviceset="PAD" device="-HOLE-0.6" package3d_urn="urn:adsk.eagle:package:6513718/2" value="PAD-HOLE-0.6">
+<variant name="basic" populate="no"/>
+</part>
+<part name="PAD11" library="PADS" library_urn="urn:adsk.eagle:library:3188696" deviceset="PAD" device="-HOLE-0.6" package3d_urn="urn:adsk.eagle:package:6513718/2" value="PAD-HOLE-0.6">
+<variant name="basic" populate="no"/>
+</part>
+<part name="PAD12" library="PADS" library_urn="urn:adsk.eagle:library:3188696" deviceset="PAD" device="-HOLE-0.6" package3d_urn="urn:adsk.eagle:package:6513718/2" value="PAD-HOLE-0.6">
+<variant name="basic" populate="no"/>
+</part>
+<part name="PAD13" library="PADS" library_urn="urn:adsk.eagle:library:3188696" deviceset="PAD" device="-HOLE-0.6" package3d_urn="urn:adsk.eagle:package:6513718/2" value="PAD-HOLE-0.6">
+<variant name="basic" populate="no"/>
+</part>
+<part name="PAD14" library="PADS" library_urn="urn:adsk.eagle:library:3188696" deviceset="PAD" device="-HOLE-0.6" package3d_urn="urn:adsk.eagle:package:6513718/2" value="PAD-HOLE-0.6">
+<variant name="basic" populate="no"/>
+</part>
+<part name="PAD15" library="PADS" library_urn="urn:adsk.eagle:library:3188696" deviceset="PAD" device="-HOLE-0.6" package3d_urn="urn:adsk.eagle:package:6513718/2" value="PAD-HOLE-0.6">
+<variant name="basic" populate="no"/>
+</part>
+<part name="PAD16" library="PADS" library_urn="urn:adsk.eagle:library:3188696" deviceset="PAD" device="-HOLE-0.6" package3d_urn="urn:adsk.eagle:package:6513718/2" value="PAD-HOLE-0.6">
+<variant name="basic" populate="no"/>
+</part>
+<part name="PAD17" library="PADS" library_urn="urn:adsk.eagle:library:3188696" deviceset="PAD" device="-HOLE-0.6" package3d_urn="urn:adsk.eagle:package:6513718/2" value="PAD-HOLE-0.6">
+<variant name="basic" populate="no"/>
+</part>
+<part name="PAD18" library="PADS" library_urn="urn:adsk.eagle:library:3188696" deviceset="PAD" device="-HOLE-0.6" package3d_urn="urn:adsk.eagle:package:6513718/2" value="PAD-HOLE-0.6">
+<variant name="basic" populate="no"/>
+</part>
+<part name="PAD19" library="PADS" library_urn="urn:adsk.eagle:library:3188696" deviceset="PAD" device="-HOLE-0.6" package3d_urn="urn:adsk.eagle:package:6513718/2" value="PAD-HOLE-0.6">
+<variant name="basic" populate="no"/>
+</part>
+<part name="R29" library="R_digikey" library_urn="urn:adsk.eagle:library:2539499" deviceset="200R" device="-0402" package3d_urn="urn:adsk.eagle:package:2539512/2" technology="-5%" value="200R"/>
 <part name="P+12" library="sapog_reference_hardware" deviceset="3.3V" device=""/>
 <part name="R30" library="R_digikey" library_urn="urn:adsk.eagle:library:2539499" deviceset="10K" device="-0402" package3d_urn="urn:adsk.eagle:package:2539512/2" technology="-0.1%" value="10K"/>
 </parts>
@@ -5666,6 +5738,7 @@ http://www.txccrystal.com/images/pdf/7m-accuracy.pdf</description>
 <wire x1="254" y1="60.96" x2="203.2" y2="60.96" width="0.1524" layer="97" style="shortdash"/>
 <text x="218.44" y="55.88" size="2.54" layer="97" font="vector" ratio="15">Thermometer</text>
 <text x="139.7" y="63.5" size="1.27" layer="97" font="vector">Place R26 TO WRITE PROTECT</text>
+<text x="139.7" y="40.64" size="1.778" layer="97">WP pin pull up is optional</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes">
@@ -5922,7 +5995,6 @@ http://www.txccrystal.com/images/pdf/7m-accuracy.pdf</description>
 <instance part="FD3" gate="G$1" x="134.62" y="10.16" smashed="yes"/>
 <instance part="FD4" gate="G$1" x="124.46" y="10.16" smashed="yes"/>
 <instance part="R1" gate="G$1" x="40.64" y="101.6" smashed="yes" rot="R180">
-<attribute name="ASSEMBLY" x="40.64" y="101.6" size="1.778" layer="96" rot="R180" display="off"/>
 <attribute name="NAME" x="40.64" y="101.6" size="1.27" layer="95" rot="R180" align="center"/>
 <attribute name="VALUE" x="40.894" y="103.632" size="0.762" layer="96" rot="R180" align="bottom-right"/>
 <attribute name="PACKAGE" x="44.45" y="101.092" size="0.508" layer="95" rot="R180" align="center"/>
@@ -5930,7 +6002,6 @@ http://www.txccrystal.com/images/pdf/7m-accuracy.pdf</description>
 </instance>
 <instance part="R26" gate="G$1" x="172.72" y="66.04" smashed="yes" rot="R270">
 <attribute name="PARTNO" x="172.72" y="66.04" size="1.778" layer="96" rot="R270" display="off"/>
-<attribute name="ASSEMBLY" x="172.72" y="66.04" size="1.778" layer="96" rot="R270" display="off"/>
 <attribute name="NAME" x="172.72" y="66.04" size="1.27" layer="95" rot="R270" align="center"/>
 <attribute name="VALUE" x="170.688" y="66.294" size="0.762" layer="96" rot="R270" align="bottom-right"/>
 <attribute name="PACKAGE" x="173.228" y="69.85" size="0.508" layer="95" rot="R270" align="center"/>
@@ -5999,7 +6070,6 @@ http://www.txccrystal.com/images/pdf/7m-accuracy.pdf</description>
 <attribute name="NAME" x="248.92" y="120.65" size="1.27" layer="95" font="vector" ratio="15" rot="MR0" align="center"/>
 </instance>
 <instance part="R29" gate="G$1" x="40.64" y="99.06" smashed="yes" rot="R180">
-<attribute name="ASSEMBLY" x="40.64" y="99.06" size="1.778" layer="96" rot="R180" display="off"/>
 <attribute name="NAME" x="40.64" y="99.06" size="1.27" layer="95" rot="R180" align="center"/>
 <attribute name="VALUE" x="40.894" y="101.092" size="0.762" layer="96" rot="R180" align="bottom-right"/>
 <attribute name="PACKAGE" x="44.45" y="98.552" size="0.508" layer="95" rot="R180" align="center"/>
@@ -6782,9 +6852,9 @@ http://www.txccrystal.com/images/pdf/7m-accuracy.pdf</description>
 <wire x1="71.12" y1="172.72" x2="71.12" y2="137.16" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="71.12" y1="137.16" x2="60.96" y2="137.16" width="0.1524" layer="97" style="shortdash"/>
 <text x="63.5" y="142.24" size="1.27" layer="97" font="vector" ratio="15" rot="R90">TVS Protection</text>
-<text x="78.74" y="63.5" size="1.27" layer="91"> Set feedback voltage divider ratio with VOUT = VFB (1+(R27/R28)).</text>
-<text x="78.74" y="60.96" size="1.27" layer="91">Feedback voltage 0.74 0.765 0.79</text>
-<text x="78.74" y="53.34" size="1.27" layer="91">Vout min = 10.36
+<text x="78.74" y="63.5" size="1.27" layer="97"> Set feedback voltage divider ratio with VOUT = VFB (1+(R27/R28)).</text>
+<text x="78.74" y="60.96" size="1.27" layer="97">Feedback voltage 0.74 0.765 0.79</text>
+<text x="78.74" y="53.34" size="1.27" layer="97">Vout min = 10.36
 Vout = 10.71
 Vout max = 11.06</text>
 </plain>
