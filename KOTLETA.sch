@@ -6959,6 +6959,14 @@ PC4 is 0</text>
 Vout = 10.71
 Vout max = 11.06</text>
 <text x="78.74" y="52.07" size="0.635" layer="97">https://docs.google.com/spreadsheets/d/1WwElBVsDBB5yf-5zQ-RQBamWm7rKtQzdxvj4nXSMxlk/edit?usp=sharing</text>
+<text x="139.7" y="30.48" size="1.778" layer="97">These pads are used to connect BULK CAPACITOR.
+A good one can be found here
+https://www.digikey.com/product-detail/en/wurth-electronics-inc/860160574017/732-9555-1-ND/5729493</text>
+<wire x1="124.46" y1="38.1" x2="124.46" y2="7.62" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="124.46" y1="7.62" x2="137.16" y2="7.62" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="137.16" y1="7.62" x2="137.16" y2="38.1" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="137.16" y1="38.1" x2="127" y2="38.1" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="127" y1="38.1" x2="124.46" y2="38.1" width="0.1524" layer="97" style="shortdash"/>
 </plain>
 <instances>
 <instance part="FRAME2" gate="G$1" x="0" y="0" smashed="yes">
@@ -7466,17 +7474,17 @@ Vout max = 11.06</text>
 <attribute name="PACKAGE" x="139.192" y="59.69" size="0.508" layer="95" rot="R90" align="center"/>
 <attribute name="TOLERANCE" x="141.732" y="63.754" size="0.762" layer="96" rot="R90"/>
 </instance>
-<instance part="PAD21" gate="G$1" x="55.88" y="60.96" smashed="yes" rot="MR0">
-<attribute name="NAME" x="55.88" y="62.23" size="1.27" layer="95" font="vector" ratio="15" rot="MR0" align="center"/>
+<instance part="PAD21" gate="G$1" x="134.62" y="27.94" smashed="yes" rot="MR0">
+<attribute name="NAME" x="134.62" y="29.21" size="1.27" layer="95" font="vector" ratio="15" rot="MR0" align="center"/>
 </instance>
-<instance part="PAD22" gate="G$1" x="55.88" y="53.34" smashed="yes" rot="MR0">
-<attribute name="NAME" x="55.88" y="54.61" size="1.27" layer="95" font="vector" ratio="15" rot="MR0" align="center"/>
+<instance part="PAD22" gate="G$1" x="134.62" y="20.32" smashed="yes" rot="MR0">
+<attribute name="NAME" x="134.62" y="21.59" size="1.27" layer="95" font="vector" ratio="15" rot="MR0" align="center"/>
 </instance>
-<instance part="+P13" gate="G$1" x="50.8" y="63.5" smashed="yes">
-<attribute name="VALUE" x="50.8" y="67.056" size="1.27" layer="96" font="vector" ratio="15" align="center"/>
+<instance part="+P13" gate="G$1" x="129.54" y="30.48" smashed="yes">
+<attribute name="VALUE" x="129.54" y="34.036" size="1.27" layer="96" font="vector" ratio="15" align="center"/>
 </instance>
-<instance part="GND46" gate="1" x="50.8" y="48.26" smashed="yes">
-<attribute name="VALUE" x="50.8" y="46.99" size="1.27" layer="96" font="vector" ratio="15" align="center"/>
+<instance part="GND46" gate="1" x="129.54" y="15.24" smashed="yes">
+<attribute name="VALUE" x="129.54" y="13.97" size="1.27" layer="96" font="vector" ratio="15" align="center"/>
 </instance>
 </instances>
 <busses>
@@ -7693,9 +7701,9 @@ Vout max = 11.06</text>
 </segment>
 <segment>
 <pinref part="PAD22" gate="G$1" pin="P$1"/>
-<wire x1="53.34" y1="53.34" x2="50.8" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="20.32" x2="129.54" y2="20.32" width="0.1524" layer="91"/>
 <pinref part="GND46" gate="1" pin="GND"/>
-<wire x1="50.8" y1="53.34" x2="50.8" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="20.32" x2="129.54" y2="17.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SENSE_VIN" class="0">
@@ -7978,9 +7986,9 @@ Vout max = 11.06</text>
 </segment>
 <segment>
 <pinref part="PAD21" gate="G$1" pin="P$1"/>
-<wire x1="53.34" y1="60.96" x2="50.8" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="27.94" x2="129.54" y2="27.94" width="0.1524" layer="91"/>
 <pinref part="+P13" gate="G$1" pin="VBAT"/>
-<wire x1="50.8" y1="60.96" x2="50.8" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="27.94" x2="129.54" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SENSE_B" class="0">
