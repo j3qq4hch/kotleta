@@ -5037,6 +5037,9 @@ http://www.txccrystal.com/images/pdf/7m-accuracy.pdf</description>
 <package name="HOLE_0.5" library_version="10" library_locally_modified="yes">
 <pad name="P$1" x="0" y="0" drill="0.5" shape="square"/>
 </package>
+<package name="HOLE_0.8" library_version="10" library_locally_modified="yes">
+<pad name="P$1" x="0" y="0" drill="0.8"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="4X3" urn="urn:adsk.eagle:package:3188709/1" type="box" library_version="10" library_locally_modified="yes">
@@ -5494,6 +5497,14 @@ http://www.txccrystal.com/images/pdf/7m-accuracy.pdf</description>
 <technology name=""/>
 </technologies>
 </device>
+<device name="-HOLE-0.8" package="HOLE_0.8">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 </devicesets>
@@ -5502,7 +5513,7 @@ http://www.txccrystal.com/images/pdf/7m-accuracy.pdf</description>
 <attributes>
 </attributes>
 <variantdefs>
-<variantdef name="basic" current="yes"/>
+<variantdef name="basic"/>
 </variantdefs>
 <classes>
 <class number="0" name="default" width="0" drill="0">
@@ -5817,6 +5828,10 @@ http://www.txccrystal.com/images/pdf/7m-accuracy.pdf</description>
 </part>
 <part name="P+12" library="sapog_reference_hardware" deviceset="3.3V" device=""/>
 <part name="R30" library="R_digikey" library_urn="urn:adsk.eagle:library:2539499" deviceset="10K" device="-0402" package3d_urn="urn:adsk.eagle:package:2539512/2" technology="-0.1%" value="10K"/>
+<part name="PAD21" library="PADS" library_urn="urn:adsk.eagle:library:3188696" deviceset="PAD" device="-HOLE-0.8"/>
+<part name="PAD22" library="PADS" library_urn="urn:adsk.eagle:library:3188696" deviceset="PAD" device="-HOLE-0.8"/>
+<part name="+P13" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="VBAT" device=""/>
+<part name="GND46" library="sapog_reference_hardware" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -7451,6 +7466,18 @@ Vout max = 11.06</text>
 <attribute name="PACKAGE" x="139.192" y="59.69" size="0.508" layer="95" rot="R90" align="center"/>
 <attribute name="TOLERANCE" x="141.732" y="63.754" size="0.762" layer="96" rot="R90"/>
 </instance>
+<instance part="PAD21" gate="G$1" x="55.88" y="60.96" smashed="yes" rot="MR0">
+<attribute name="NAME" x="55.88" y="62.23" size="1.27" layer="95" font="vector" ratio="15" rot="MR0" align="center"/>
+</instance>
+<instance part="PAD22" gate="G$1" x="55.88" y="53.34" smashed="yes" rot="MR0">
+<attribute name="NAME" x="55.88" y="54.61" size="1.27" layer="95" font="vector" ratio="15" rot="MR0" align="center"/>
+</instance>
+<instance part="+P13" gate="G$1" x="50.8" y="63.5" smashed="yes">
+<attribute name="VALUE" x="50.8" y="67.056" size="1.27" layer="96" font="vector" ratio="15" align="center"/>
+</instance>
+<instance part="GND46" gate="1" x="50.8" y="48.26" smashed="yes">
+<attribute name="VALUE" x="50.8" y="46.99" size="1.27" layer="96" font="vector" ratio="15" align="center"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -7663,6 +7690,12 @@ Vout max = 11.06</text>
 <pinref part="R30" gate="G$1" pin="1"/>
 <pinref part="GND16" gate="1" pin="GND"/>
 <wire x1="139.7" y1="58.42" x2="139.7" y2="55.88" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="PAD22" gate="G$1" pin="P$1"/>
+<wire x1="53.34" y1="53.34" x2="50.8" y2="53.34" width="0.1524" layer="91"/>
+<pinref part="GND46" gate="1" pin="GND"/>
+<wire x1="50.8" y1="53.34" x2="50.8" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SENSE_VIN" class="0">
@@ -7942,6 +7975,12 @@ Vout max = 11.06</text>
 <pinref part="PAD1" gate="G$1" pin="P$1"/>
 <wire x1="12.7" y1="68.58" x2="15.24" y2="68.58" width="0.1524" layer="91"/>
 <junction x="15.24" y="68.58"/>
+</segment>
+<segment>
+<pinref part="PAD21" gate="G$1" pin="P$1"/>
+<wire x1="53.34" y1="60.96" x2="50.8" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="+P13" gate="G$1" pin="VBAT"/>
+<wire x1="50.8" y1="60.96" x2="50.8" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SENSE_B" class="0">
