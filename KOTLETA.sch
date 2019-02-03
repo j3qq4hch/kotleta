@@ -6857,6 +6857,7 @@ http://www.txccrystal.com/images/pdf/7m-accuracy.pdf</description>
 <text x="78.74" y="53.34" size="1.27" layer="97">Vout min = 10.36
 Vout = 10.71
 Vout max = 11.06</text>
+<text x="78.74" y="52.07" size="0.635" layer="97">https://docs.google.com/spreadsheets/d/1WwElBVsDBB5yf-5zQ-RQBamWm7rKtQzdxvj4nXSMxlk/edit?usp=sharing</text>
 </plain>
 <instances>
 <instance part="FRAME2" gate="G$1" x="0" y="0" smashed="yes">
