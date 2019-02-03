@@ -4807,7 +4807,6 @@ package type OT</description>
 <part name="+P2" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="VBAT" device=""/>
 <part name="+P3" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="VBAT" device=""/>
 <part name="+P4" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="VBAT" device=""/>
-<part name="+P5" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="VBAT" device=""/>
 <part name="C36" library="C_digikey" library_urn="urn:adsk.eagle:library:2539367" deviceset="22µF" device="-1206" package3d_urn="urn:adsk.eagle:package:2539382/2" technology="-35V_20%_X5R" value="22µF"/>
 <part name="GND16" library="sapog_reference_hardware" deviceset="GND" device=""/>
 <part name="GND19" library="sapog_reference_hardware" deviceset="GND" device=""/>
@@ -4822,6 +4821,7 @@ package type OT</description>
 <part name="+P11" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="VBAT" device=""/>
 <part name="C38" library="C_digikey" library_urn="urn:adsk.eagle:library:2539367" deviceset="22µF" device="-1206" package3d_urn="urn:adsk.eagle:package:2539382/2" technology="-35V_20%_X5R" value="22µF"/>
 <part name="GND33" library="sapog_reference_hardware" deviceset="GND" device=""/>
+<part name="+P12" library="supply_symbols" library_urn="urn:adsk.eagle:library:5017758" deviceset="9V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -6314,9 +6314,6 @@ package type OT</description>
 <instance part="+P4" gate="G$1" x="246.38" y="165.1" smashed="yes">
 <attribute name="VALUE" x="246.38" y="168.656" size="1.27" layer="96" font="vector" ratio="15" align="center"/>
 </instance>
-<instance part="+P5" gate="G$1" x="25.4" y="121.92" smashed="yes">
-<attribute name="VALUE" x="25.4" y="125.476" size="1.27" layer="96" font="vector" ratio="15" align="center"/>
-</instance>
 <instance part="C36" gate="G$1" x="144.78" y="81.28" smashed="yes" rot="MR270">
 <attribute name="NAME" x="145.669" y="80.01" size="1.27" layer="95" rot="MR270" align="center-left"/>
 <attribute name="VALUE" x="144.526" y="82.55" size="0.762" layer="96" rot="MR270" align="bottom-right"/>
@@ -6367,6 +6364,9 @@ package type OT</description>
 </instance>
 <instance part="GND33" gate="1" x="149.86" y="71.12" smashed="yes">
 <attribute name="VALUE" x="149.86" y="69.85" size="1.27" layer="96" font="vector" ratio="15" align="center"/>
+</instance>
+<instance part="+P12" gate="G$1" x="25.4" y="121.92" smashed="yes">
+<attribute name="VALUE" x="25.4" y="125.476" size="1.27" layer="96" font="vector" ratio="15" align="center"/>
 </instance>
 </instances>
 <busses>
@@ -6787,15 +6787,6 @@ package type OT</description>
 <pinref part="+P4" gate="G$1" pin="VBAT"/>
 </segment>
 <segment>
-<pinref part="IC6" gate="G$1" pin="VDD"/>
-<pinref part="C14" gate="G$1" pin="1"/>
-<wire x1="20.32" y1="119.38" x2="25.4" y2="119.38" width="0.1524" layer="91"/>
-<pinref part="+P5" gate="G$1" pin="VBAT"/>
-<wire x1="25.4" y1="119.38" x2="27.94" y2="119.38" width="0.1524" layer="91"/>
-<wire x1="25.4" y1="121.92" x2="25.4" y2="119.38" width="0.1524" layer="91"/>
-<junction x="25.4" y="119.38"/>
-</segment>
-<segment>
 <pinref part="D3" gate="G$1" pin="A"/>
 <wire x1="22.86" y1="165.1" x2="22.86" y2="167.64" width="0.1524" layer="91"/>
 <pinref part="+P7" gate="G$1" pin="VBAT"/>
@@ -7153,6 +7144,15 @@ package type OT</description>
 <wire x1="149.86" y1="86.36" x2="154.94" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="149.86" y1="83.82" x2="149.86" y2="86.36" width="0.1524" layer="91"/>
 <junction x="149.86" y="86.36"/>
+</segment>
+<segment>
+<pinref part="IC6" gate="G$1" pin="VDD"/>
+<pinref part="C14" gate="G$1" pin="1"/>
+<wire x1="20.32" y1="119.38" x2="25.4" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="119.38" x2="27.94" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="121.92" x2="25.4" y2="119.38" width="0.1524" layer="91"/>
+<junction x="25.4" y="119.38"/>
+<pinref part="+P12" gate="G$1" pin="VDD_9V"/>
 </segment>
 </net>
 </nets>
