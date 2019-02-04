@@ -3,13 +3,13 @@
 <eagle version="9.3.0">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.025" unitdist="mm" unit="mm" style="lines" multiple="2" display="yes" altdistance="1" altunitdist="mm" altunit="mm"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="gnd" color="1" fill="3" visible="no" active="yes"/>
 <layer number="3" name="SUPPLY" color="2" fill="5" visible="no" active="yes"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
@@ -24,17 +24,17 @@
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
 <layer number="14" name="Horizontal" color="13" fill="1" visible="no" active="no"/>
 <layer number="15" name="+3v3" color="4" fill="6" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="14" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
@@ -59,8 +59,8 @@
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
@@ -2424,7 +2424,6 @@ http://www.txccrystal.com/images/pdf/7m-accuracy.pdf</description>
 <contactref element="IC1" pad="26"/>
 <wire x1="0.7" y1="11.45" x2="0.7" y2="10.475" width="0.2" layer="1"/>
 <via x="1.7" y="9.1" extent="1-16" drill="0.3"/>
-<wire x1="4.0796875" y1="11.0015625" x2="4.013978125" y2="10.935959375" width="0.2" layer="16"/>
 <wire x1="4.013978125" y1="10.935959375" x2="2.175" y2="9.1" width="0.2" layer="16"/>
 <wire x1="2.175" y1="9.1" x2="1.7" y2="9.1" width="0.2" layer="16"/>
 <wire x1="1.7" y1="9.1" x2="1.7" y2="9.475" width="0.2" layer="1"/>
@@ -2439,7 +2438,6 @@ http://www.txccrystal.com/images/pdf/7m-accuracy.pdf</description>
 <wire x1="1.85" y1="7.775" x2="1.85" y2="7.8" width="0.2" layer="1"/>
 <wire x1="6.643" y1="11.426" x2="6.643" y2="11.051" width="0.2" layer="16"/>
 <wire x1="5.697" y1="10.103" x2="6.643" y2="11.051" width="0.2" layer="16"/>
-<wire x1="2.025" y1="7.775" x2="1.85" y2="7.775" width="0.2" layer="16"/>
 <wire x1="1.85" y1="7.8" x2="1.125" y2="8.525" width="0.2" layer="1"/>
 <wire x1="1.125" y1="8.525" x2="1.125" y2="9.4093125" width="0.2" layer="1"/>
 <wire x1="1.125" y1="9.4093125" x2="0.2" y2="10.3343125" width="0.2" layer="1"/>
@@ -3044,7 +3042,6 @@ http://www.txccrystal.com/images/pdf/7m-accuracy.pdf</description>
 <wire x1="5.365" y1="1.45065625" x2="5.325425" y2="1.450425" width="0.2" layer="16"/>
 <wire x1="5.325425" y1="1.450425" x2="4.075" y2="0.2" width="0.2" layer="16"/>
 <wire x1="4.075" y1="0.2" x2="4.075" y2="0.15" width="0.2" layer="16"/>
-<wire x1="4.075" y1="-0.025" x2="4.075" y2="0.15" width="0.2" layer="16"/>
 <wire x1="4.075" y1="0.15" x2="3.875" y2="-0.05" width="0.2" layer="16"/>
 <wire x1="3.875" y1="-0.05" x2="3.875" y2="-0.6" width="0.2" layer="16"/>
 <wire x1="3.875" y1="-0.6" x2="2.85" y2="-1.625" width="0.2" layer="16"/>
@@ -3093,12 +3090,12 @@ http://www.txccrystal.com/images/pdf/7m-accuracy.pdf</description>
 <via x="1.825" y="-15.975" extent="1-16" drill="0.3"/>
 <wire x1="0.635" y1="-12.66" x2="0.625" y2="-12.67" width="0.2" layer="1"/>
 <wire x1="0.625" y1="-12.67" x2="0.625" y2="-12.975" width="0.2" layer="1"/>
-<wire x1="3.325" y1="-8.575" x2="3.325" y2="-3.975" width="0.2" layer="3"/>
+<wire x1="3.3" y1="-8.6" x2="3.3" y2="-4" width="0.2" layer="3"/>
 <via x="6.2" y="0.15" extent="1-16" drill="0.3"/>
 <wire x1="6.2" y1="0.15" x2="5.525" y2="0.15" width="0.2" layer="16"/>
 <wire x1="0.475" y1="3.25" x2="2.325" y2="3.25" width="0.2" layer="16"/>
 <wire x1="2.325" y1="3.25" x2="2.625" y2="3.55" width="0.2" layer="16"/>
-<wire x1="3.325" y1="-8.575" x2="1.06" y2="-10.84" width="0.2" layer="3"/>
+<wire x1="3.3" y1="-8.6" x2="1.06" y2="-10.84" width="0.2" layer="3"/>
 <wire x1="1.85" y1="-12.95" x2="1.825" y2="-12.975" width="0.2" layer="3"/>
 <wire x1="0.475" y1="3.25" x2="-0.475" y2="4.2" width="0.2" layer="16"/>
 <wire x1="-0.475" y1="4.2" x2="-1.8" y2="4.2" width="0.2" layer="16"/>
@@ -3128,7 +3125,7 @@ http://www.txccrystal.com/images/pdf/7m-accuracy.pdf</description>
 <contactref element="Q4" pad="PAD_D"/>
 <wire x1="2.625" y1="3.55" x2="6.6" y2="3.55" width="0.2" layer="16"/>
 <wire x1="7.75066875" y1="2.39933125" x2="6.6" y2="3.55" width="0.2" layer="16"/>
-<wire x1="3.325" y1="-3.975" x2="6.2" y2="-1.1" width="0.2" layer="3"/>
+<wire x1="3.3" y1="-4" x2="6.2" y2="-1.1" width="0.2" layer="3"/>
 <wire x1="6.2" y1="-1.1" x2="6.2" y2="0.15" width="0.2" layer="3"/>
 <wire x1="6.2" y1="0.15" x2="6.875" y2="0.15" width="0.2" layer="16"/>
 <wire x1="7.75" y1="1.619" x2="7.905" y2="1.774" width="0.2" layer="16"/>
@@ -3248,8 +3245,6 @@ http://www.txccrystal.com/images/pdf/7m-accuracy.pdf</description>
 <wire x1="6.225" y1="-12.765" x2="6.225" y2="-13.025" width="0.2" layer="1"/>
 <wire x1="6.225" y1="-13.025" x2="6.05" y2="-12.85" width="0.2" layer="3"/>
 <wire x1="6.175" y1="-10.25" x2="6.175" y2="-5.275" width="0.2" layer="3"/>
-<wire x1="8.075" y1="-1.525" x2="8.075" y2="-1.475" width="0.2" layer="3"/>
-<wire x1="8.075" y1="-1.475" x2="8.075" y2="-1.225" width="0.2" layer="3"/>
 <wire x1="8.075" y1="-1.225" x2="9.85" y2="0.55" width="0.2" layer="3"/>
 <via x="9.25" y="6.45" extent="1-16" drill="0.3"/>
 <wire x1="9.85" y1="0.55" x2="9.85" y2="3.7" width="0.2" layer="3"/>
@@ -3293,8 +3288,8 @@ http://www.txccrystal.com/images/pdf/7m-accuracy.pdf</description>
 <wire x1="11.65" y1="-17.15" x2="11.65" y2="-20.1" width="0.2" layer="16"/>
 <wire x1="9.191" y1="10.309" x2="9.191" y2="11.41" width="0.2" layer="16"/>
 <wire x1="9.191" y1="11.41" x2="9.175" y2="11.426" width="0.2" layer="16"/>
-<wire x1="8.075" y1="-1.475" x2="8.075" y2="-3.375" width="0.2" layer="3"/>
-<wire x1="8.075" y1="-3.375" x2="6.175" y2="-5.275" width="0.2" layer="3"/>
+<wire x1="6.175" y1="-5.275" x2="8.075" y2="-3.375" width="0.2" layer="3"/>
+<wire x1="8.075" y1="-3.375" x2="8.075" y2="-1.225" width="0.2" layer="3"/>
 </signal>
 <signal name="FET_C_LO">
 <contactref element="IC6" pad="7"/>
@@ -3366,7 +3361,6 @@ http://www.txccrystal.com/images/pdf/7m-accuracy.pdf</description>
 <wire x1="11.731" y1="9.95" x2="11.731" y2="5.681" width="0.2" layer="16"/>
 <wire x1="8.55" y1="2.5" x2="8.55" y2="1.05" width="0.2" layer="16"/>
 <wire x1="8.55" y1="2.5" x2="11.731" y2="5.681" width="0.2" layer="16"/>
-<wire x1="2.65" y1="-3.5" x2="2.75" y2="-3.6" width="0.2" layer="16"/>
 <wire x1="6.9" y1="-0.6" x2="5.025" y2="-0.6" width="0.2" layer="16"/>
 <wire x1="5.025" y1="-0.6" x2="4.911825" y2="-0.6" width="0.2" layer="16"/>
 <wire x1="6.9" y1="-0.6" x2="8.55" y2="1.05" width="0.2" layer="16"/>
@@ -3956,7 +3950,6 @@ http://www.txccrystal.com/images/pdf/7m-accuracy.pdf</description>
 <wire x1="-4.25" y1="7" x2="-3.463175" y2="7" width="0.2" layer="1"/>
 <wire x1="-3.463175" y1="7" x2="-3.238175" y2="6.775" width="0.2" layer="1"/>
 <wire x1="-3.238175" y1="6.775" x2="-2.601159375" y2="6.774996875" width="0.2" layer="1"/>
-<wire x1="-2.601159375" y1="6.774996875" x2="-2.557753125" y2="6.731590625" width="0.2" layer="1"/>
 <wire x1="-2.4" y1="6.8893375" x2="-2.4" y2="7.625" width="0.2" layer="3"/>
 <wire x1="-2.4" y1="7.625" x2="-2.725" y2="7.95" width="0.2" layer="3"/>
 <wire x1="-2.725" y1="7.95" x2="-3.4" y2="7.95" width="0.2" layer="3"/>
@@ -4149,7 +4142,6 @@ http://www.txccrystal.com/images/pdf/7m-accuracy.pdf</description>
 <wire x1="0.075" y1="13.8" x2="1.575" y2="15.3" width="0.7" layer="16"/>
 <wire x1="2.4" y1="16.925" x2="2.85" y2="16.925" width="0.7" layer="16"/>
 <wire x1="2.85" y1="16.925" x2="5.825" y2="13.95" width="0.7" layer="16"/>
-<wire x1="10.445" y1="1.774" x2="10.457" y2="1.774" width="0.2" layer="16"/>
 <wire x1="-4.75" y1="13.75625" x2="-0.51875" y2="13.75625" width="0.7" layer="16"/>
 <wire x1="-0.51875" y1="13.75625" x2="-0.475" y2="13.8" width="0.7" layer="16"/>
 <wire x1="-0.475" y1="13.8" x2="0.075" y2="13.8" width="0.7" layer="16"/>
@@ -4174,6 +4166,103 @@ http://www.txccrystal.com/images/pdf/7m-accuracy.pdf</description>
 <mfgpreviewcolor name="coppercolor" color="0xFFFFBF00"/>
 <mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
 </mfgpreviewcolors>
+<errors>
+<approved hash="19,1,3fb3e1f361f4bfb4"/>
+<approved hash="19,16,d89c6c299c60c15f"/>
+<approved hash="19,16,77b948146a5655f7"/>
+<approved hash="19,16,4a72712ca744d86e"/>
+<approved hash="19,16,184db61f90d04f8e"/>
+<approved hash="19,16,2bff84ad5ce2b3bc"/>
+<approved hash="19,16,d3d867f3799a81c4"/>
+<approved hash="19,16,bcfb8d255fcd2567"/>
+<approved hash="19,16,486a74c0fa288bf6"/>
+<approved hash="19,16,18c92a9614ffe6d5"/>
+<approved hash="4,1,5d8bc22fc22c5d88"/>
+<approved hash="4,1,cbc12c44ac4e4bcb"/>
+<approved hash="4,1,a0fd8778074220c7"/>
+<approved hash="4,1,e716a6cb2b4de2eb"/>
+<approved hash="4,1,844822ed55775811"/>
+<approved hash="4,1,9a23c3fe4e4199df"/>
+<approved hash="4,1,8ed6a953295d0ed8"/>
+<approved hash="4,1,35d2d2575251b5d4"/>
+<approved hash="4,1,6bd9045c8426eba3"/>
+<approved hash="4,1,475aa8df28d8c75d"/>
+<approved hash="4,1,b061b01b301b3061"/>
+<approved hash="4,1,95b51a591a5a95b6"/>
+<approved hash="4,1,0d622ae7aae18d64"/>
+<approved hash="4,1,4de7b262326fcdea"/>
+<approved hash="4,1,f0ebd76e576870ed"/>
+<approved hash="4,1,269c09198963a6e6"/>
+<approved hash="4,1,6c7cec271324937f"/>
+<approved hash="4,1,69e1e9c216c196e2"/>
+<approved hash="4,1,42bdc961c96242be"/>
+<approved hash="4,1,4626c5cac5c94625"/>
+<approved hash="4,1,e558fc9a03991a5b"/>
+<approved hash="4,1,72d55550d55af2df"/>
+<approved hash="4,1,96e4f961796b16ee"/>
+<approved hash="4,2,f5b2bd92bd91f5b1"/>
+<approved hash="4,2,3dec622762243def"/>
+<approved hash="4,2,c42594756b763b26"/>
+<approved hash="4,2,c1b8919e6e9d3ebb"/>
+<approved hash="4,2,eae4b13cb13feae7"/>
+<approved hash="4,2,ee5fbd97bd94ee5c"/>
+<approved hash="4,2,e9054e30ca3d6d08"/>
+<approved hash="4,2,05334a06ce0c8139"/>
+<approved hash="4,2,ee163523b1296a1c"/>
+<approved hash="4,2,5b1a7c2ff815df20"/>
+<approved hash="4,2,14b6b383378e90bb"/>
+<approved hash="4,2,2fb9c88c4c8aabbf"/>
+<approved hash="4,2,f9ceb6fb32817db4"/>
+<approved hash="4,2,7530bd053902f137"/>
+<approved hash="4,2,4cf34c39c839c8f3"/>
+<approved hash="4,2,9409cf3c4b3a100f"/>
+<approved hash="4,2,4e87b0b234bfca8a"/>
+<approved hash="4,2,6580cdb549b3e186"/>
+<approved hash="4,2,d78b9bbe1fc453f1"/>
+<approved hash="4,3,f5b2bd92bd91f5b1"/>
+<approved hash="4,3,3dec622762243def"/>
+<approved hash="4,3,c42594756b763b26"/>
+<approved hash="4,3,c1b8919e6e9d3ebb"/>
+<approved hash="4,3,eae4b13cb13feae7"/>
+<approved hash="4,3,ee5fbd97bd94ee5c"/>
+<approved hash="4,3,e9054e30ca3d6d08"/>
+<approved hash="4,3,05334a06ce0c8139"/>
+<approved hash="4,3,ee163523b1296a1c"/>
+<approved hash="4,3,5b1a7c2ff815df20"/>
+<approved hash="4,3,14b6b383378e90bb"/>
+<approved hash="4,3,2fb9c88c4c8aabbf"/>
+<approved hash="4,3,f9ceb6fb32817db4"/>
+<approved hash="4,3,7530bd053902f137"/>
+<approved hash="4,3,4cf34c39c839c8f3"/>
+<approved hash="4,3,9409cf3c4b3a100f"/>
+<approved hash="4,3,4e87b0b234bfca8a"/>
+<approved hash="4,3,6580cdb549b3e186"/>
+<approved hash="4,3,d78b9bbe1fc453f1"/>
+<approved hash="4,16,5d8bc22fc22c5d88"/>
+<approved hash="4,16,95b51a591a5a95b6"/>
+<approved hash="4,16,6c7cec271324937f"/>
+<approved hash="4,16,69e1e9c216c196e2"/>
+<approved hash="4,16,42bdc961c96242be"/>
+<approved hash="4,16,4626c5cac5c94625"/>
+<approved hash="4,16,72d55550d55af2df"/>
+<approved hash="4,16,96e4f961796b16ee"/>
+<approved hash="4,16,cbc12c44ac4e4bcb"/>
+<approved hash="4,16,a0fd8778074220c7"/>
+<approved hash="4,16,8ed6a953295d0ed8"/>
+<approved hash="4,16,35d2d2575251b5d4"/>
+<approved hash="4,16,6bd9045c8426eba3"/>
+<approved hash="4,16,542e18ae333017b0"/>
+<approved hash="4,16,475aa8df28d8c75d"/>
+<approved hash="4,16,b061b01b301b3061"/>
+<approved hash="4,16,0d622ae7aae18d64"/>
+<approved hash="4,16,4de7b262326fcdea"/>
+<approved hash="4,16,7e1cb69f7b0e9281"/>
+<approved hash="4,16,f0ebd76e576870ed"/>
+<approved hash="4,16,269c09198963a6e6"/>
+<approved hash="4,16,706a73149b8498fa"/>
+<approved hash="23,16,ebc4d738d758eba4"/>
+<approved hash="23,3,d0f9f0e74f3b4cc5"/>
+</errors>
 </board>
 </drawing>
 <compatibility>
