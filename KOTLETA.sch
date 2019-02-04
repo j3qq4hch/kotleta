@@ -6468,20 +6468,6 @@ PC4 is 0</text>
 <label x="68.58" y="63.5" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
 </net>
-<net name="CAN2_RX" class="0">
-<segment>
-<pinref part="IC1" gate="G$1" pin="PB12"/>
-<wire x1="121.92" y1="81.28" x2="124.46" y2="81.28" width="0.1524" layer="91"/>
-<label x="124.46" y="81.28" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="CAN2_TX" class="0">
-<segment>
-<pinref part="IC1" gate="G$1" pin="PB13"/>
-<wire x1="121.92" y1="83.82" x2="124.46" y2="83.82" width="0.1524" layer="91"/>
-<label x="124.46" y="83.82" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
 <net name="CAN1_TX" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="PA12"/>
@@ -6962,11 +6948,11 @@ Vout max = 11.06</text>
 <text x="139.7" y="30.48" size="1.778" layer="97">These pads are used to connect BULK CAPACITOR.
 A good one can be found here
 https://www.digikey.com/product-detail/en/wurth-electronics-inc/860160574017/732-9555-1-ND/5729493</text>
-<wire x1="124.46" y1="38.1" x2="124.46" y2="7.62" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="124.46" y1="7.62" x2="137.16" y2="7.62" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="137.16" y1="7.62" x2="137.16" y2="38.1" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="137.16" y1="38.1" x2="127" y2="38.1" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="127" y1="38.1" x2="124.46" y2="38.1" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="121.92" y1="38.1" x2="121.92" y2="7.62" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="121.92" y1="7.62" x2="134.62" y2="7.62" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="134.62" y1="7.62" x2="134.62" y2="38.1" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="134.62" y1="38.1" x2="124.46" y2="38.1" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="124.46" y1="38.1" x2="121.92" y2="38.1" width="0.1524" layer="97" style="shortdash"/>
 </plain>
 <instances>
 <instance part="FRAME2" gate="G$1" x="0" y="0" smashed="yes">
@@ -7474,17 +7460,17 @@ https://www.digikey.com/product-detail/en/wurth-electronics-inc/860160574017/732
 <attribute name="PACKAGE" x="139.192" y="59.69" size="0.508" layer="95" rot="R90" align="center"/>
 <attribute name="TOLERANCE" x="141.732" y="63.754" size="0.762" layer="96" rot="R90"/>
 </instance>
-<instance part="PAD21" gate="G$1" x="134.62" y="27.94" smashed="yes" rot="MR0">
-<attribute name="NAME" x="134.62" y="29.21" size="1.27" layer="95" font="vector" ratio="15" rot="MR0" align="center"/>
+<instance part="PAD21" gate="G$1" x="132.08" y="27.94" smashed="yes" rot="MR0">
+<attribute name="NAME" x="132.08" y="29.21" size="1.27" layer="95" font="vector" ratio="15" rot="MR0" align="center"/>
 </instance>
-<instance part="PAD22" gate="G$1" x="134.62" y="20.32" smashed="yes" rot="MR0">
-<attribute name="NAME" x="134.62" y="21.59" size="1.27" layer="95" font="vector" ratio="15" rot="MR0" align="center"/>
+<instance part="PAD22" gate="G$1" x="132.08" y="20.32" smashed="yes" rot="MR0">
+<attribute name="NAME" x="132.08" y="21.59" size="1.27" layer="95" font="vector" ratio="15" rot="MR0" align="center"/>
 </instance>
-<instance part="+P13" gate="G$1" x="129.54" y="30.48" smashed="yes">
-<attribute name="VALUE" x="129.54" y="34.036" size="1.27" layer="96" font="vector" ratio="15" align="center"/>
+<instance part="+P13" gate="G$1" x="127" y="30.48" smashed="yes">
+<attribute name="VALUE" x="127" y="34.036" size="1.27" layer="96" font="vector" ratio="15" align="center"/>
 </instance>
-<instance part="GND46" gate="1" x="129.54" y="15.24" smashed="yes">
-<attribute name="VALUE" x="129.54" y="13.97" size="1.27" layer="96" font="vector" ratio="15" align="center"/>
+<instance part="GND46" gate="1" x="127" y="15.24" smashed="yes">
+<attribute name="VALUE" x="127" y="13.97" size="1.27" layer="96" font="vector" ratio="15" align="center"/>
 </instance>
 </instances>
 <busses>
@@ -7701,9 +7687,9 @@ https://www.digikey.com/product-detail/en/wurth-electronics-inc/860160574017/732
 </segment>
 <segment>
 <pinref part="PAD22" gate="G$1" pin="P$1"/>
-<wire x1="132.08" y1="20.32" x2="129.54" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="20.32" x2="127" y2="20.32" width="0.1524" layer="91"/>
 <pinref part="GND46" gate="1" pin="GND"/>
-<wire x1="129.54" y1="20.32" x2="129.54" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="127" y1="20.32" x2="127" y2="17.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SENSE_VIN" class="0">
@@ -7986,9 +7972,9 @@ https://www.digikey.com/product-detail/en/wurth-electronics-inc/860160574017/732
 </segment>
 <segment>
 <pinref part="PAD21" gate="G$1" pin="P$1"/>
-<wire x1="132.08" y1="27.94" x2="129.54" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="27.94" x2="127" y2="27.94" width="0.1524" layer="91"/>
 <pinref part="+P13" gate="G$1" pin="VBAT"/>
-<wire x1="129.54" y1="27.94" x2="129.54" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="127" y1="27.94" x2="127" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SENSE_B" class="0">
@@ -8201,7 +8187,7 @@ https://www.digikey.com/product-detail/en/wurth-electronics-inc/860160574017/732
 </segment>
 <segment>
 <pinref part="Q2" gate="G$1" pin="S"/>
-<wire x1="134.62" y1="134.62" x2="134.62" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="134.62" x2="134.62" y2="109.22" width="0.1524" layer="91"/>
 <pinref part="Q4" gate="G$1" pin="S"/>
 <wire x1="190.5" y1="134.62" x2="190.5" y2="132.08" width="0.1524" layer="91"/>
 <wire x1="190.5" y1="132.08" x2="190.5" y2="109.22" width="0.1524" layer="91"/>
@@ -8214,7 +8200,6 @@ https://www.digikey.com/product-detail/en/wurth-electronics-inc/860160574017/732
 <wire x1="203.2" y1="96.52" x2="190.5" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="190.5" y1="109.22" x2="190.5" y2="96.52" width="0.1524" layer="91"/>
 <junction x="190.5" y="109.22"/>
-<wire x1="134.62" y1="132.08" x2="134.62" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="134.62" y1="109.22" x2="190.5" y2="109.22" width="0.1524" layer="91"/>
 <pinref part="R14" gate="G$1" pin="1"/>
 <wire x1="210.82" y1="96.52" x2="215.9" y2="96.52" width="0.1524" layer="91"/>
@@ -8319,7 +8304,7 @@ https://www.digikey.com/product-detail/en/wurth-electronics-inc/860160574017/732
 <wire x1="114.3" y1="91.44" x2="116.84" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="VDD_9V" class="0">
+<net name="VDD_10V5" class="0">
 <segment>
 <pinref part="L1" gate="G$1" pin="P$2"/>
 <wire x1="137.16" y1="86.36" x2="139.7" y2="86.36" width="0.1524" layer="91"/>
